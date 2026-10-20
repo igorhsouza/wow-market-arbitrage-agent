@@ -1,0 +1,15 @@
+# Proibido enviar senhas e chaves
+.env
+
+# Proibido enviar ambiente virtual e arquivos temporários do Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Arquivos do sistema e do editor
+.vscode/
+.idea/
+.DS_Store

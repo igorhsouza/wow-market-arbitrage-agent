@@ -90,3 +90,34 @@ O algoritmo avalia oportunidades através de dois pilares:
    ```bash
    git clone [https://github.com/igorhsouza/wow-market-arbitrage-agent.git](https://github.com/igorhsouza/wow-market-arbitrage-agent.git)
    cd wow-market-arbitrage-agent
+
+   Inicializar banco de dados:
+
+Bash
+docker compose up -d
+Configurar variáveis de ambiente:
+
+Bash
+cp .env.example .env
+(Preencher credenciais da Blizzard, Google Studio e Webhook do Discord no .env)
+
+Instalar dependências:
+
+Bash
+pip install -r requirements.txt
+Executar fluxo:
+
+Bash
+python fetch_market.py
+python market_analyst.py
+Notes
+A tomada de decisão não é terceirizada cegamente para a IA.
+
+A base do sistema apoia-se em dados matemáticos e consistência relacional em SQL.
+
+O LLM atua estritamente como a camada de inteligência contextual e formulação de estratégia de saída.
+
+Author
+Igor Henrique
+
+Automation • Data • Systems
